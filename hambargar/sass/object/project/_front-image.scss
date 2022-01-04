@@ -1,0 +1,20 @@
+.p-front-image{
+    height: 285px;
+    background: url(../images/front-page001.jpg) no-repeat;
+    background-size: cover;
+    @include pc{
+      height: 530px;
+    }
+  }
+
+.p-front-image__word{
+    font-size: 36px;
+    color: #fff;
+    padding-left: 40px;
+    padding-top: 120px;
+    font-weight: bold;
+    @include pc{
+      font-size: 40px;
+      padding-top: 240px;
+    }
+  }

@@ -1,0 +1,73 @@
+.l-header{
+  width: 100%;
+  height: 200px;
+  background-color: #FFF7EF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include pc{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+.l-header__title{
+    color:#707070;
+    font-size: 40px;  
+    font-weight: bold;
+    padding: 20px;
+    @include pc{
+      font-size: 60px;  
+    }
+  }
+  
+@media (min-width: 375px) {
+      .l-header__form{
+          padding: 0px 20px;
+      }
+  }
+
+
+.l-header__form__box{
+    width: 230px;
+    height: 46px;
+    border-radius: 0.6rem; 
+    border: solid 1px #707070;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color:white; 
+    margin: 10px;  
+    @include tab{
+      width: 396px;
+      height: 46px;
+    }
+    @include pc{
+      width: 396px;
+    }
+  }
+
+.l-header__form__button{
+    width: 78px;
+    height: 46px;
+    font-weight: bold ;
+    background-color: #F2EDE9;
+    border-radius: 0.6rem;
+    border: solid 1px #707070;
+    color: #707070;
+    cursor: pointer; 
+    padding-top: 6px;   
+    @include tab{
+      width: 136px;
+      height: 46px;
+    }   
+}
+
+   
+
+ 
+
+ 
+
+
