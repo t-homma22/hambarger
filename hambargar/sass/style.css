@@ -400,6 +400,9 @@ body li {
 
 .scroll-prevent {
   position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
 /**
@@ -639,6 +642,7 @@ body li {
             transform: translateX(0%);
     position: static;
     opacity: 1;
+    padding-top: 60px;
   }
 }
 
