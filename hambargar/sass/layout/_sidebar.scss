@@ -1,176 +1,176 @@
 .l-sidebar{
-    background-color: #F2EDE9;
-    height: 100%;
-    padding-left: 46px;
-    overflow-x: hidden;
-    position: relative;
-    @include pc{
-      overflow-x: visible;
-      width: 100%;
-    }
-   }   
- 
+  background-color: #F2EDE9;
+  height: 100%;
+  padding-left: 46px;
+  overflow-x: hidden;
+  position: relative;
+  @include pc{
+    overflow-x: visible;
+    width: 100%;
+  }
+ }   
+
 .l-sidebar__word{
-    display: none;
-    @include pc{
-      display: block;
-      font-size: 34px;
-      font-weight: 600;
-      color: #707070;
-      padding-top: 80px;
-      padding-left: 30px;
-    }
+  display: none;
+  @include pc{
+    display: block;
+    font-size: 34px;
+    font-weight: 600;
+    color: #707070;
+    padding-top: 80px;
+    padding-left: 30px;
+  }
 
 }
 
 .l-sidebar__hamburger {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 50px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 300;
-  @include pc{
-   display: none;
-  }
+position: absolute;
+right: 20px;
+top: 20px;
+width: 50px;
+height: 40px;
+cursor: pointer;
+z-index: 300;
+@include pc{
+ display: none;
+}
 
 }
 
 .l-sidebar__hamburger span {
-  position: absolute;
-  width: 50px;
-  height: 6px;
-  right: 0;
-  background-color: #707070;
+position: absolute;
+width: 50px;
+height: 6px;
+right: 0;
+background-color: #707070;
 }
 
 .l-sidebar__hamburger:after{
-  content:"Menu";
-  margin-top:1px;
-  margin-left:-10px;
-  color: #707070;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  @include tab{    
-   margin-left:-50px;
-   font-size: 34px;
-  }
-  @include pc{}
+content:"Menu";
+margin-top:1px;
+margin-left:-10px;
+color: #707070;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+border: none;
+@include tab{    
+ margin-left:-50px;
+ font-size: 34px;
+}
+@include pc{}
 
 }
 
 .l-sidebar__hamburger__line--1 {
-  opacity: 0;
+opacity: 0;
 }
 
 .l-sidebar__hamburger__line--2 {
-  opacity: 0;
+opacity: 0;
 }
 
 .l-sidebar__hamburger__line--3 {
-  opacity: 0;
+opacity: 0;
 }
 
 .open .l-sidebar__hamburger:after{
-  content:"";
+content:"";
 }
 .open .l-sidebar__hamburger__line--1 {
-  transform: rotate(-45deg);
-  top: 11px;
-  opacity: 1;    
+transform: rotate(-45deg);
+top: 11px;
+opacity: 1;    
 }
 
 .open .l-sidebar__hamburger__line--2 {
-  opacity: 0;
+opacity: 0;
 }
 
 .open .l-sidebar__hamburger__line--3 {
-  transform: rotate(45deg);
-  top: 11px;
-  opacity: 1;
+transform: rotate(45deg);
+top: 11px;
+opacity: 1;
 }
-  
- .l-sidebar__menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  transform: translateX(100%);
-  width: 70%;
-  height: 100%;
-  background-color: #fff;
-  z-index: 200;
-  overflow-y: auto; 
-  opacity: 0;
-  transition:  transform 0.3s;
-  padding-top: 200px;
-  padding-left: 30px;
+
+.l-sidebar__menu {
+position: fixed;
+top: 0;
+right: 0;
+transform: translateX(100%);
+width: 70%;
+height: 100%;
+background-color: #fff;
+z-index: 200;
+overflow-y: auto; 
+opacity: 0;
+transition:  transform 0.3s;
+padding-top: 200px;
+padding-left: 30px;
+@include pc{
+ width: 100%;
+ height: 100%;
+ transform: translateX(0%);
+ position: static;
+ opacity: 1;    
+}
+li{
+  padding-bottom: 15px;
+  font-size: 24px;   
   @include pc{
-   width: 100%;
-   height: 100%;
-   transform: translateX(0%);
-   position: static;
-   opacity: 1;    
+   padding-bottom: 20px;
   }
-  li{
-    padding-bottom: 15px;
-    font-size: 24px;   
-    @include pc{
-     padding-bottom: 20px;
-    }
-  }
+}
 }
 
 .open .l-sidebar__menu {
-  pointer-events: auto;
-  opacity: 1;
-  transform: translateX(0);
+pointer-events: auto;
+opacity: 1;
+transform: translateX(0);
 }
- 
- .l-sidebar__mainmenu{
-   display: block;
-   font-size: 34px;
-   font-weight: 600;
-   color: #707070;
-   padding-top: 8px;
-   padding-bottom: 40px;
-   @include pc{
-    padding-top: 7px;
-    margin-right: 20px
-   }
- }
- 
- .l-sidebar__submenu
-  li{ 
-      a{
-        color: #707070;
-        font-size: 20px;
-        padding-left: 20px;
-        @include pc{
-          padding-left: 30px;
-        }
 
-   }
+.l-sidebar__mainmenu{
+ display: block;
+ font-size: 34px;
+ font-weight: 600;
+ color: #707070;
+ padding-top: 8px;
+ padding-bottom: 40px;
+ @include pc{
+  padding-top: 7px;
+  margin-right: 20px
  }
- 
- .l-sidebar__black-bg {
-   position: fixed;
-   left: 0;
-   top: 0;
-   width: 100vw;
-   height: 100vh;
-   z-index: 5;
-   background-color: #000;
-   opacity: 0;
-   visibility: hidden;
-   transition: all 0.5s;
-   cursor: pointer;
-   z-index: 100;
+}
+
+.l-sidebar__submenu
+li{ 
+    a{
+      color: #707070;
+      font-size: 20px;
+      padding-left: 20px;
+      @include pc{
+        padding-left: 30px;
+      }
+
  }
- 
- .open .l-sidebar__black-bg {
-   opacity: 0.6;
-   visibility: visible;
- }
+}
+
+.l-sidebar__black-bg {
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100vw;
+ height: 100vh;
+ z-index: 5;
+ background-color: #000;
+ opacity: 0;
+ visibility: hidden;
+ transition: all 0.5s;
+ cursor: pointer;
+ z-index: 100;
+}
+
+.open .l-sidebar__black-bg {
+ opacity: 0.6;
+ visibility: visible;
+}

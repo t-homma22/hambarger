@@ -495,7 +495,6 @@ body li {
   border: solid 1px #707070;
   color: #707070;
   cursor: pointer;
-  padding-top: 6px;
 }
 
 @media (min-width: 375px) {
@@ -968,7 +967,6 @@ li a {
   height: auto;
   position: absolute;
   bottom: 0;
-  margin: 20px 20px;
 }
 
 .c-article__wrap {
@@ -976,11 +974,11 @@ li a {
   width: 90%;
   background-color: #fff;
   opacity: 0.6;
-  margin: 20px 0px;
+  margin: 10px 15px;
 }
 
 .c-article__wrap p {
-  font-size: 16px;
+  font-size: auto;
   padding: 9px 19px;
   color: #3C2A10;
   line-height: 1.5;
