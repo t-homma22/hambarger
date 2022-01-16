@@ -22,17 +22,19 @@
       font-size: 60px;  
     }
   }
-  
-@media (min-width: 375px) {
-      .l-header__form{
-          padding: 0px 20px;
+.l-header__form{ 
+    width: 375px;
+    height: 46px;
+@media (min-width: 375px) {     
+      padding: 0px 10px;
+      width: 546px;
+      height: 46px;
       }
   }
 
 
 .l-header__form__box{
-    width: 230px;
-    height: 46px;
+    width: 70%;
     border-radius: 0.6rem; 
     border: solid 1px #707070;
     font-size: 1.6rem;
@@ -40,17 +42,17 @@
     background-color:white; 
     margin: 10px;  
     @include tab{
-      width: 396px;
+      width: 60%;
       height: 46px;
+      padding-bottom: 9px;
     }
     @include pc{
-      width: 396px;
+      width: 60%;
     }
   }
 
 .l-header__form__button{
-    width: 78px;
-    height: 46px;
+    width: 20%;
     font-weight: bold ;
     background-color: #F2EDE9;
     border-radius: 0.6rem;
@@ -59,8 +61,8 @@
     cursor: pointer; 
     padding-top: 6px;   
     @include tab{
-      width: 136px;
-      height: 46px;
+      width: 30%;
+      height: 100%;
     }   
 }
 

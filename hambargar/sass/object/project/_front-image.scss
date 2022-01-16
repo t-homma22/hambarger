@@ -1,9 +1,14 @@
 .p-front-image{
     height: 285px;
-    background: url(../images/front-page001.jpg) no-repeat;
+    background: url(../images/front-page005.jpg) no-repeat;
     background-size: cover;
+    @include tab{
+      background: url(../images/front-page006.jpg) no-repeat;
+    }
     @include pc{
       height: 530px;
+      background: url(../images/front-page001.jpg) no-repeat;
+
     }
   }
 
