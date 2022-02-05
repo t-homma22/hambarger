@@ -1,0 +1,263 @@
+/*-front-image-*/
+.p-archive-front-image{
+    background-color: black;
+    width: 100%;
+    height: 240px;
+    position: relative;
+}
+
+.p-archive-front-image::before{
+  background: url(../images/archive-page003.jpg)no-repeat;
+  content: '';
+  width: 100%;
+  height: 240px;
+  display: block;
+  position: absolute;
+  @include pc{
+    background: url(../images/archive-page004.jpg)no-repeat;
+
+  }
+}
+
+.p-image__word {
+    color: #fff;
+    padding-left: 40px;
+    padding-top: 100px;
+    font-weight: bold;
+    position: absolute;
+    @include tab{
+      display: flex;
+      p{
+        font-size: 20px;
+        padding-top: 12px;
+      }
+    }
+    @include pc{
+      font-size: 25px;
+    
+    p{
+      padding-top: 27px;
+    }}
+    }
+
+
+
+/*-section-*/
+.p-archive-section{
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  @include tab{
+    width: 100%;
+    height: 280px;
+  }
+}
+
+.p-section__word{
+  padding: 50px 20px;
+  color: #3C2A10;
+  font-family: regular;
+  h2{
+      font-size: 30px;
+      font-weight: bold;    
+  }
+  p{
+      width: 330px;
+      padding-top: 40px;
+      font-size: 16px;
+      line-height: 1.5;  
+      @include tab{
+        width: 100%;
+      }  
+  }
+}
+
+/*-article-*/
+.p-archive-article{
+  width: 100%;
+  height: auto;
+  padding:0 20px;
+  @include pc{
+  }
+ }
+
+ .p-archive-article__wrap{
+  width: 336px;
+  height: 580px;
+  margin: 30px 0;
+  padding: 20px;
+  @include tab{ 
+    display: flex;
+    height: 350px;
+    width: 100%;
+  }
+  @include pc{
+  }
+}
+
+.p-wrap__image{
+    @include tab{ 
+      width: 50%;
+    }
+  @include pc{
+
+    }
+  }
+
+
+.p-article__text{
+padding: 20px 20px;
+background-color: #3C2B1C;
+color: white;
+margin: -10px 0px;
+@include tab{
+  margin: 0;
+  padding: 50px 40px;
+}
+@include pc{
+}
+h3{
+  font-size: 20px;
+  padding-top: 10px;
+@include tab{
+  padding-top: 0;
+  }
+@include pc{
+}
+}
+h4{
+font-weight: 16px;
+font-size: auto;
+padding-top: 20px;
+@include pc{
+}
+}
+> p{
+
+  padding: 10px 50px 30px 0;
+  font-size: 14px;
+ @include tab{
+  padding-right:0 ;
+  height: 112px;
+  overflow: hidden;
+}
+@include pc{
+}
+
+}
+a{
+  font-size: 18px;
+  color: #707070;
+  display: block;
+  background-color: white;
+  border-radius: 50px;
+  width: 160px;
+  height: 42px;
+  font-weight: bold;
+  padding: 5px 35px;
+  text-align: center;
+  margin: auto;
+  @include tab{
+    margin-top: 25px;
+
+  }
+  @include pc{
+  }
+}
+}
+
+/*-pagenation-*/
+.p-pagenation {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #707070;
+  overflow: hidden;
+  @include tab{
+    width: 100%;
+    height: 200px;
+    justify-content: center; 
+    padding-right: 40px;
+  }
+  @include pc{
+  }
+}
+
+.p-pagenation-back{
+  padding-left: 40px;
+  color: inherit;
+  @include tab{
+    display: none;
+  }
+  @include pc{
+  }
+ }
+ 
+ .p-pagenation-next{
+  padding-right: 50px;
+  color: inherit;
+  @include tab{
+    display: none;
+  }
+  @include pc{
+  }
+ }
+ 
+ .p-pagenation-back::before{
+     content: "<<";
+     padding-right: 10px;
+     @include tab{
+    }
+    @include pc{
+    }
+
+ }
+ 
+ .p-pagenation-next::after{
+     content: ">>";
+     padding-left: 10px;
+     @include tab{
+    }
+    @include pc{
+    }
+ }
+ 
+ .p-pagenation-list{
+     display: none;
+     @include tab{
+      display: flex;
+      li{
+        padding: 0 8px;
+        font-size: 1.4rem;
+      }
+      li:first-of-type{
+        padding-top: 10px;
+        position: relative;
+        }
+      }
+      li:nth-child(2) a{
+        background-color: #3C2B1C;
+        color: white;
+      }
+      li:last-of-type::before{
+        content: ">>";
+        padding-left: 50px;
+        padding-top: 10px;
+        position: absolute; 
+        }
+      li:first-of-type::after{
+          content: "<<";
+          padding-left: 20px;
+          }
+      li:last-of-type{
+            position: relative;}
+      a{
+            display: block;
+            border: solid 1px #3C2B1C;
+            padding: 10px;}
+      
+    }
+

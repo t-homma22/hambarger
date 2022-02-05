@@ -17,11 +17,7 @@
 /* sidebar */
 @import "./layout/_sidebar.scss";
 
-/* front-image */
-
-/* article */
-
-/* map */
+/* main */
 
 /* footer */
 @import "./layout/_footer.scss";
@@ -40,12 +36,8 @@
  /* sidebar */
 
 
-/* front-image */
-
-/* article */
-@import "./object/project/_article.scss";
-
-/* map */
+/* main */
+@import "./object/component/_front-page-main.scss";
 
 /* footer */
 
@@ -58,95 +50,13 @@
  /* sidebar */
 
 
-/* front-image */
-@import "./object/project/_front-image.scss";
-
-/* article */
-@import "./object/component/_article.scss";
-
-/* map */
-@import "./object/project/_map.scss";
+/* main */
+@import "./object/project/_front-page-main.scss";
+@import "./object/project/_archive-main.scss";
+@import "./object/project/_search-main.scss";
 
 /* footer */
 
 /* Utility ------------------- */
 
-
-
-
-/**
-* Layout
-* ============================== */
-
-/* header */
-
-/* sidebar */
-
-  
-/* front-image */
- 
-/* article */
-  
-/* map */
-
-/* footer */
-
-/* Object
-* ============================== */
-   
-/* Component ------------------- */
-   
-/* article */
-   
-/* Project ------------------- */
-   
-/* header */
-   
-/* sidebar */
-   
-/* front-image */
-   
-/* article */
-/* map */
-/* footer */
-
-
-/**
-* Layout
-* ============================== */
-/* maincontents */
-
-
-/* header */
-  
-/* sidebar */
-/* front-image */
-  
-  /* article */
-  
-  
-/* map */
-
-/* footer */
-
-/* Object
-* ============================== */
-   
-/* Component ------------------- */
-   
-/* article */
-
-   
-/* Project ------------------- */
-/* maincontents */
-/* header */ 
-/* sidebar */
-   
-/* front-image */
-   
-/* article */
-  
-/* map */
-   
-/* footer */
 

@@ -8,3 +8,10 @@ window.onload = function () {
     });    
 };
 
+    $(function() {
+        $('.p-search-word').click(function(){ 
+         $('.p-search-word').text('ようこそ、Progateへ');
+        });
+        
+      });  
+

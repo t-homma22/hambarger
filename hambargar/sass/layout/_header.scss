@@ -25,7 +25,7 @@
 .l-header__form{ 
     width: 375px;
     height: 46px;
-@media (min-width: 375px) {     
+    @include tab{     
       padding: 0px 10px;
       width: 546px;
       height: 46px;
@@ -44,7 +44,7 @@
     @include tab{
       width: 60%;
       height: 46px;
-      padding-bottom: 9px;
+      padding-bottom: 7px;
     }
     @include pc{
       width: 60%;
@@ -59,6 +59,8 @@
     border: solid 1px #707070;
     color: #707070;
     cursor: pointer; 
+    height: 40px;
+    padding: 10px 0px;
     @include tab{
       width: 30%;
       height: 100%;
