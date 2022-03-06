@@ -1,11 +1,11 @@
-$tab: 375px;
+$tab: 415px;
 @mixin tab {
     @media (min-width: ($tab)) {
         @content;
     }
 }
 
-$pc: 834px;
+$pc: 1025px;
 @mixin pc {
     @media (min-width: ($pc)) {
         @content;

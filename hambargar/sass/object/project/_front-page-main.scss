@@ -1,6 +1,6 @@
 /*front-page*/
 .p-front-image{
-    height: 285px;
+    height: 283px;
     background-image: url(../images/front-page005.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,19 +30,13 @@
 
 /*archive*/
 .p-article{
-    background: #fff;
-    height: 1400px;
-    width: 100%;
-    display: flex;  
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  padding: 20px 20px;
     @include tab{
-      height: 800px;
-      flex-direction: row;
+      display: flex;
+      padding: 40px;
     }
     @include pc{
-      height: 1045px;
+      padding: 120px 120px 134px 111px;
     }
   }
 
@@ -50,25 +44,31 @@
     position: relative;
     background: url(../images/front-page002.jpg)no-repeat;
     background-size: cover;
-    width: 45%;
-    height: 642px;
-    @include pc{
-      width: 40%;
-      height: 842px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    @include tab{
+    margin-bottom: 0px;
     }
-
+    @include pc{
+    }
   }
+
+
   
-.p-article-eatin{
+  .p-article-eatin{
     position: relative;
     background: url(../images/front-page003.jpg)no-repeat;
     background-size: cover;
-    width: 45%;
-    height: 642px;
-    @include pc{
-      width: 40%;
-      height: 842px;
+    height: auto;
+    width: 100%;
+    @include tab{
+      margin: 0 0 0 40px;
     }
+    @include pc{
+      margin: 0 0 0 80px;
+    }
+
   }
 
 .p-article{
@@ -76,15 +76,19 @@
         position: relative;
         color: #fff;
         font-size: 41px;
-        font-weight: 600;
-        padding-top: 30px;
+        font-weight:  bold;
+        padding-top: 20px;
         padding-left: 20px;
+        font-family:'Roboto';
+        padding-bottom: 232px; 
+        white-space: nowrap;
         @include tab{
           font-size: 44px;
-
+          padding-bottom: 246px;
         }
         @include pc{
           font-size: 60px;
+          padding-bottom: 679px;
         }
       }
       
@@ -101,6 +105,7 @@
         }
         @include pc{
         width: 63px;
+        top: 160.5px;
         }
       }
       
@@ -116,19 +121,24 @@
 .p-map{
   width: 100%;
   height: 700px;
+  max-height: 700px;
   position: relative;
+
   overflow: hidden;
     @include tab{
-        height: 500px;
+      height: 415px;
     }  
     @include pc{
-        height: 649px;
+      height: 649px;
     }
    }  
 
+   
 .p-map__image{
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
 }
    
 .p-map--background1{
@@ -147,6 +157,18 @@
         left:0;
     }
    }
+/*.p-map::before{
+    content: "";
+    display: block;
+    padding-top: 185%;
+    @include tab{
+      padding-top: 50%;
+    }  
+    @include pc{
+      padding-top: 41%;
+  
+    }}  */
+ 
    
 .p-map--background2{
   position: absolute;
@@ -158,7 +180,7 @@
     @include tab{
         width: 100%;
         height: 100%;
-        background-color: rgba(#000, 0.7);
+        background-color: rgba(#000, 0.6);
     }
     @include pc{
         background-color: rgba(#000, 0.4);
@@ -171,57 +193,60 @@
 .p-map__wrap{
     color: #fff;
     font-weight: bold;
-    font-size: 20px;
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%; 
-    padding-top:50px;
-    padding:40px 20px; 
-    z-index: 15;           
+    padding: 40px 40px 50px 40px;
+    max-height: 593px;  
+    z-index: 15;  
+    overflow: hidden;         
     @include tab{
-        width: 100%;
-        padding: 60px;
-    }
+      padding: 40px 29px 32px 42px; 
+      max-height: 350px;   }
     @include pc{
-        top:110px;  
-        left: 0;
-        padding: 0 430px 0 100px;    }
+      width: 53%;
+      padding: 83px 0 0 119px;
+      max-height: 526px;    }
     h3{
-        font-size: 25px; 
+        font-size: 30px; 
+        padding-bottom: 40px;
         @include tab{
             font-size: 30px;
         }
-        @include pc{
-          font-size: 2vw;
+        @include pc{ 
+          font-size: 36px;
+          padding-bottom: 119px;
       }
-       }
-    &:after{
+      &::after{
         position: absolute;
-        top: 100px;
         content: "";
         width: 80px;
         height: 3px;
         background-color: #fff;
-        left: 20px;
+        top:102px;
+        left: 40px;
         @include tab{
-          top:130px;
-          left: 60px;
+          top:102px;
+          left: 40px;
       }
         @include pc{
-            top:70px;
-            left: 100px;
+          width: 90px;
+          height: 3px;
+          top: 189px;
+          left: 119px;
         }
+       }
+
     }
     p{
-    padding-top: 60px;
     font-size: 14px;
     line-height: 2.1;
     @include tab{
         line-height: 2.4;
+    
     }
     @include pc{
-        font-size: 15px;
+        line-height: 2.1;
+        font-size: 16px;
 
     } 
     }

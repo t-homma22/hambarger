@@ -54,6 +54,7 @@ font-size: 20px;
 font-weight: bold;
 cursor: pointer;
 border: none;
+font-family:'Roboto';
 @include tab{    
  margin-left:-50px;
  font-size: 34px;
@@ -100,13 +101,13 @@ right: 0;
 transform: translateX(100%);
 width: 70%;
 height: 100%;
-background-color: #fff;
+background-color: #F2EDE9;
 z-index: 200;
 overflow-y: auto; 
 opacity: 0;
 transition:  transform 0.3s;
 padding-top: 200px;
-padding-left: 30px;
+padding-left: 40px;
 @include pc{
  width: 100%;
  height: 100%;
@@ -136,8 +137,7 @@ transform: translateX(0);
  font-size: 34px;
  font-weight: 600;
  color: #707070;
- padding-top: 8px;
- padding-bottom: 40px;
+ padding: 38px 0;
  @include pc{
   padding-top: 7px;
   margin-right: 20px
