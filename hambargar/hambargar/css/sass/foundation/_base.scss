@@ -1,0 +1,38 @@
+body{
+    font-family: 'M PLUS 1', sans-serif;
+
+    color: #432;
+
+    background-color: #FFFDFA;
+
+
+html{
+    font-size: 100%;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+}
+
+
+.scroll-prevent {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+

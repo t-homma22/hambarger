@@ -1,0 +1,304 @@
+/*front-page*/
+.p-front-image{
+    height: 283px;
+    background-image: url(../../images/front-page001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    background-position: center top;
+    @include tab{
+      background-image: url(../../images/front-page006.jpg);
+    }
+    @include pc{
+      height: 530px;
+      background-image: url(../../images/front-page001.jpg);
+
+    }
+  }
+
+.p-front-image__word{
+    font-size: 36px;
+    color: #fff;
+    padding-left: 40px;
+    padding-top: 120px;
+    font-weight: bold;
+    @include pc{
+      font-size: 40px;
+      padding-top: 240px;
+    }
+  }
+
+/*archive*/
+.p-article{
+  padding: 20px 20px;
+    @include tab{
+      display: flex;
+      padding: 40px;
+    }
+    @include pc{
+      padding: 120px 120px 134px 111px;
+    }
+  }
+
+.p-article-takeout{
+    position: relative;
+    background: url(../../images/front-page002.jpg)no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    @include tab{
+    margin-bottom: 0px;
+    }
+    @include pc{
+    }
+  }
+
+
+  
+  .p-article-eatin{
+    position: relative;
+    background: url(../../images/front-page003.jpg)no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    @include tab{
+      margin: 0 0 0 40px;
+    }
+    @include pc{
+      margin: 0 0 0 80px;
+    }
+
+  }
+
+.p-article{
+    h2{
+        position: relative;
+        color: #fff;
+        font-size: 41px;
+        font-weight:  bold;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-family:'Roboto';
+        padding-bottom: 232px; 
+        white-space: nowrap;
+        @include tab{
+          font-size: 44px;
+          padding-bottom: 246px;
+        }
+        @include pc{
+          font-size: 60px;
+          padding-bottom: 679px;
+        }
+      }
+      
+      h2::after{
+        position: absolute;
+        top: 120px;
+        left: 26px;
+        content: "";
+        width: 33px;
+        height: 6px;
+        background-color: #fff;
+        @include tab{
+        width: 36px;
+        }
+        @include pc{
+        width: 63px;
+        top: 160.5px;
+        }
+      }
+      
+      h4{
+        font-size: 24px;
+        padding: 22px 19px;
+        color: #3C2A10;
+      }
+}
+  
+  
+/*map*/
+.p-map{
+  width: 100%;
+  height: auto;
+  position: relative;
+    @include tab{
+    }  
+    @include pc{
+    }
+   }  
+
+   
+.p-map__image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+   
+.p-map--background1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000000, 0.3);
+    z-index: 10;
+    @include tab{
+        width: 100%;
+    }
+    @include pc{
+        width: 100%;
+        height: 100%;
+        left:0;
+    }
+   }
+/*.p-map::before{
+    content: "";
+    display: block;
+    padding-top: 185%;
+    @include tab{
+      padding-top: 50%;
+    }  
+    @include pc{
+      padding-top: 41%;
+  
+    }}  */
+ 
+   
+.p-map--background2{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(#000, 0.4);
+  z-index: 5;
+    @include tab{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.6);
+    }
+    @include pc{
+        background-color: rgba(#000, 0.4);
+        height: 100%;
+        width: 70%;
+        display: block;
+    }
+   }
+  
+.p-map__wrap{
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    padding: 40px 40px 50px 40px;
+    z-index: 15;  
+    @include tab{
+      padding: 40px 29px 32px 42px; 
+     }
+    @include pc{
+      width: 53%;
+      padding: 83px 0 40px 119px;
+    }
+    h3{
+        font-size: 30px; 
+        padding-bottom: 40px;
+        @include tab{
+            font-size: 30px;
+        }
+        @include pc{ 
+          font-size: 36px;
+          padding-bottom: 119px;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 3px;
+        background-color: #fff;
+        top:102px;
+        left: 40px;
+        @include tab{
+          top:102px;
+          left: 40px;
+      }
+        @include pc{
+          width: 90px;
+          height: 3px;
+          top: 189px;
+          left: 119px;
+        }
+       }
+
+    }
+    p{
+    font-size: 14px;
+    line-height: 2.1;
+    @include tab{
+        line-height: 2.4;
+    
+    }
+    @include pc{
+        line-height: 2.1;
+        font-size: 16px;
+
+    } 
+    }
+}
+
+.p-map__wrap2{
+  color: #fff;
+  font-weight: bold;
+  top: 0;
+  padding: 40px 40px 50px 40px;
+  @include tab{
+    padding: 40px 29px 32px 42px; 
+     }
+  @include pc{
+    width: 53%;
+    padding: 83px 0 40px 119px;
+       }
+  h3{
+      font-size: 30px; 
+      padding-bottom: 40px;
+      @include tab{
+          font-size: 30px;
+      }
+      @include pc{ 
+        font-size: 36px;
+        padding-bottom: 119px;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 3px;
+      background-color: #fff;
+      top:102px;
+      left: 40px;
+      @include tab{
+        top:102px;
+        left: 40px;
+    }
+      @include pc{
+        width: 90px;
+        height: 3px;
+        top: 189px;
+        left: 119px;
+      }
+     }
+
+  }
+  p{
+  font-size: 14px;
+  line-height: 2.1;
+  @include tab{
+      line-height: 2.4;
+  
+  }
+  @include pc{
+      line-height: 2.1;
+      font-size: 16px;
+
+  } 
+  }
+}
