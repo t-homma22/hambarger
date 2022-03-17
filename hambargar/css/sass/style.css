@@ -501,8 +501,7 @@ body li {
   content: "";
   width: 24px;
   height: 22px;
-  background: url(../images/header-icon.png) no-repeat center center/auto 100%;
-  display: inline-block;
+  background: url(../../images/header-icon.png) no-repeat center center/auto 100%;
   position: absolute;
   top: 11px;
   left: 22px;
